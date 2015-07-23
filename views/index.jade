@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  h3#players
+  canvas(id='pongCanvas' width='700' height='600')
+  h4#waiting
+  script(src="/lib/require.js")
+  script(type='text/javascript' src='/javascripts/game.js')
